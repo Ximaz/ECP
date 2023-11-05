@@ -23,6 +23,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Apparently, this is required for WSL */
+typedef __ssize_t ssize_t;
+
 typedef struct s_ecp_dict {
     char **keys;
     char **values;
